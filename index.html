@@ -2,10 +2,10 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8" />
-  <meta http-equiv="refresh" content="300">
+  <meta http-equiv="refresh" content="3000">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SALES CHAMPIONSHIP Leaderboard</title>
   <style>
-    
     .slogan {
       background: #E30A17; 
       color: white;
@@ -60,12 +60,12 @@
       margin: 0;
       padding: 0;
       color: #333;
-      overflow: hidden;
+      overflow-x: hidden;
     }
 
     .overlay {
       background-color: rgba(255, 255, 255, 0.65);
-      height: 100vh;
+      min-height: 100vh;
       padding: 20px;
       display: flex;
       flex-direction: column;
@@ -81,6 +81,7 @@
       padding: 15px;
       border-radius: 15px;
       box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      flex-wrap: wrap;
     }
 
     .header-content {
@@ -89,7 +90,6 @@
       justify-content: space-between; 
       width: 100%; 
       flex: 1;
-      
     }
 
     .logo {
@@ -127,7 +127,6 @@
         white-space: nowrap;
     }
 
-
     .canal-badge {
       display: inline-block;
       background: linear-gradient(135deg, #3498db, #2980b9);
@@ -145,6 +144,7 @@
       display: flex;
       flex: 1;
       gap: 20px;
+      flex-direction: row;
     }
 
     .top-vendors {
@@ -174,9 +174,7 @@
       transition: all 0.3s ease;
       padding-bottom: 20px;
       min-height: 500px;
-      
       border-bottom: 3px solid #e0e0e0;
-      
       height: 550px;
     }
     
@@ -211,7 +209,6 @@
       margin-bottom: 15px;
     }
     
-    
     .first-place .champion-image-container,
     .second-place .champion-image-container,
     .third-place .champion-image-container {
@@ -225,7 +222,6 @@
       object-position: bottom;
       filter: drop-shadow(0 5px 10px rgba(0,0,0,0.2));
     }
-    
     
     .first-place .champion-image,
     .second-place .champion-image,
@@ -258,7 +254,6 @@
       z-index: 5;
     }
     
-    
     .first-place .champion-rank,
     .second-place .champion-rank,
     .third-place .champion-rank {
@@ -290,7 +285,6 @@
       text-align: center;
     }
     
-    
     .first-place .champion-name,
     .second-place .champion-name,
     .third-place .champion-name {
@@ -307,7 +301,6 @@
       font-weight: bold;
       display: inline-block;
     }
-    
     
     .first-place .champion-score,
     .second-place .champion-score,
@@ -401,21 +394,25 @@
       flex: 1;
       color: #2c3e50;
       font-weight: 500;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
     }
 
     .other-metrics {
       display: flex;
-      gap: 15px;
+      gap: 10px;
     }
 
     .other-metric {
       text-align: center;
-      min-width: 60px;
+      min-width: 50px;
     }
 
     .other-metric-value {
       font-weight: bold;
       color: #2c3e50;
+      font-size: 0.9em;
     }
 
     .other-metric-label {
@@ -432,6 +429,7 @@
       color: #2980b9;
       font-weight: bold;
       margin-left: 10px;
+      white-space: nowrap;
     }
 
     .date-display {
@@ -530,58 +528,18 @@
       border-top: 3px solid #8F0808;
     }
 
-    @media (max-width: 768px) {
-
-        .slogan {
-        font-size: 1.2em;
-        padding: 10px 20px;
-        min-width: 250px;
-      }
-      h1 {
-    font-size: 2em;
-        }
+    @media (max-width: 1200px) {
       .dashboard {
         flex-direction: column;
       }
       
-      .top-three-container {
-        flex-direction: column;
-        height: auto;
-      }
-      
-      
-      .champion-card {
-        min-height: auto;
-        flex-direction: row;
-        align-items: center;
-        padding-bottom: 0;
-        height: auto;
-      }
-      
-      .champion-image-container {
-        width: 200px;
-        height: 200px;
-      }
-      
-      .champion-details {
-        align-items: flex-start;
-        text-align: left;
-      }
-      
-      .champion-metrics {
-        padding: 0;
+      .other-vendors {
+        max-height: none;
+        margin-top: 20px;
       }
     }
-    
-    @media (max-width: 768px) {
-      .champion-card {
-        flex-direction: column;
-      }
-      
-      .champion-image-container {
-        width: 100%;
-      }
-      
+
+    @media (max-width: 992px) {
       .header-container {
         flex-direction: column;
         text-align: center;
@@ -589,25 +547,115 @@
       
       .logo-left, .logo-right {
         margin: 10px 0;
+        height: 80px;
       }
       
       .header-content {
         flex-direction: column;
-        align-items: center;
-        margin-bottom: 15px;
       }
       
       .title-group {
-        margin-right: 0;
-        margin-left: 0;
-        margin-bottom: 15px;
+        margin: 15px 0;
         align-items: center;
       }
       
+      h1 {
+        font-size: 2.2em;
+        white-space: normal;
+      }
+      
       .slogan {
+        font-size: 1.4em;
+        padding: 10px 30px;
+        min-width: auto;
         margin: 15px 0;
         white-space: normal;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .top-three-container {
+        flex-direction: column;
+        height: auto;
+      }
+      
+      .champion-card {
+        min-height: auto;
+        height: auto;
+        margin-bottom: 20px;
+      }
+      
+      .champion-image-container {
+        height: 200px;
+      }
+      
+      .champion-name {
+        font-size: 1.4em;
+      }
+      
+      .champion-score {
+        font-size: 1.3em;
+      }
+      
+      .other-vendor-item {
+        flex-wrap: wrap;
+        gap: 5px;
+      }
+      
+      .other-name {
+        min-width: 100%;
+        order: 1;
+        margin-bottom: 5px;
+      }
+      
+      .other-score {
+        order: 2;
+        margin-left: 0;
+      }
+      
+      .other-metrics {
+        order: 3;
+        width: 100%;
+        justify-content: space-between;
+      }
+      
+      .other-metric {
+        min-width: auto;
+        flex: 1;
+      }
+    }
+
+    @media (max-width: 576px) {
+      .overlay {
+        padding: 10px;
+      }
+      
+      .header-container {
+        padding: 10px;
+      }
+      
+      h1 {
+        font-size: 1.8em;
+      }
+      
+      .canal-badge {
+        font-size: 1em;
+      }
+      
+      .slogan {
+        font-size: 1.2em;
+        padding: 8px 20px;
+      }
+      
+      .champion-metric-label,
+      .champion-metric-value {
+        font-size: 1em;
+      }
+      
+      .date-display {
+        position: static;
         text-align: center;
+        margin-top: 15px;
       }
     }
   </style>
@@ -615,7 +663,6 @@
 <body>
   <div class="overlay">
     <div class="header-container">
-      
       <img src="https://media-hosting.imagekit.io/b5412fd015c54861/perfect%20maouda.gif?Expires=1841778971&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=qqqXxryPFg55nr7YX5nPugEVx2YErxtdgKNKLJD2nwdpGPCgvcF~7ZGU2AS8Z0wIUMDJaOUOzn-2zRq3-aArCWrAIuCoLBVxLrvC22n0tw7uSjkLHoXHJZ7Aa9vr79zYZJElpfzs8s5DKGaWxHH~62dXBBxSFb-S5Mzm2ULGl9H93EsXf1bnHMvZWZlI0qQ0OxBKnYSFzny8bct4CnKrqyt4CsBlB3Ksu2plZTmvf0LW-zL~bzgsfUbXAI~-pIYga8RM75hGDDxWjm9xccojh-ZcyFkhH5JlLtetN2nDCYJtTWAZx98g1qzBrCsUvqK2xXRKpYhj5UPmoI1qy8nppA__" alt="Company Logo" class="logo logo-left">
       
       <div class="header-content">
@@ -624,10 +671,8 @@
           <div class="canal-badge">Key Account Channel</div>
         </div>
         
-        
         <div class="slogan">Passport to Victory : Who's Flying to Turkey?</div>
       </div>
-      
       
       <img src="https://media-hosting.imagekit.io/3078409131f143b2/best%20try%20gpt.gif?Expires=1841691464&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=Z7HFH0a1nn-JjoxDYseDa-UK~LBnAXHB8b2Hl50SvW42EFFhW2gl5WfNdCcPClwTjRi6btQF68fM2hUcXkr~9DL0h2Tbgjwu35h0rX3a8lstWIbJpKsp2rNUeZKHQ~3Og6L4VJla2TYscZMy2DKFAvG5ogdYaeGyFaQ1APTehAtgzTddHpAhiiHzfiA3jJ4hbHFz~S54~Tmp5s~LY8AZCLLbJj0WQF7-avQc3qE6RGP6xxG5lGnQt7zkCu77Y4JTRaIbDWMXakq5vN1Z29qFoPUvSGJmZQJlfSFv1q5AvFA6UUATkkwoYHf7F36DJhh8OEkEP16A1Jnz49grXlV7hw__" alt="Sales GIF" class="logo logo-right">
     </div>
@@ -648,23 +693,17 @@
     const dataSheetURL = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vRfJnWZ7JuAcofzGfTfXL3XBmMBIpHNWftUDGReUSVDa_bfEVuZx0fieUqz_5Rfnh_QttTmRpWsTd9h/pub?gid=0&single=true&output=csv';
     const imagesSheetURL = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vRfJnWZ7JuAcofzGfTfXL3XBmMBIpHNWftUDGReUSVDa_bfEVuZx0fieUqz_5Rfnh_QttTmRpWsTd9h/pub?gid=1307762501&single=true&output=csv';
 
-    
     const defaultImage = '/api/placeholder/200/300';
-
     
     let vendorImages = {};
-
     
     function fixGoogleDriveURL(url) {
       if (!url) return defaultImage;
       
-      
       if (url.includes('drive.google.com')) {
-        
         const match = url.match(/id=([^&]+)/);
         if (match && match[1]) {
           const fileId = match[1];
-          
           return `https://drive.google.com/thumbnail?id=${fileId}&sz=w1000`;
         }
       }
@@ -699,7 +738,6 @@
             </div>
           `;
         }
-        
         
         const isYouba = vendor.name === "Youba Kherroub";
         const recouvrementLabel = isYouba ? "SKU Energizer" : "Recouvrement";
@@ -737,7 +775,6 @@
     function renderOtherVendors(vendors) {
       const container = document.getElementById('otherVendors');
       container.innerHTML = '';
-      
       
       for (let i = 3; i < vendors.length; i++) {
         const v = vendors[i];
@@ -785,7 +822,6 @@
       document.getElementById('dateDisplay').textContent = now.toLocaleDateString('fr-FR', options);
     }
     
-    
     async function loadVendorImages() {
       try {
         const res = await fetch(imagesSheetURL);
@@ -794,9 +830,7 @@
         
         rows.forEach(row => {
           if (row.trim().length > 0) {
-            
             if (row.includes('"')) {
-              
               let inQuote = false;
               let currentField = '';
               let fields = [];
@@ -822,7 +856,6 @@
                 vendorImages[name] = imageUrl;
               }
             } else {
-              
               const parts = row.split(",");
               if (parts.length >= 2) {
                 const name = parts[0].trim();
@@ -874,13 +907,6 @@
       }
     }
     
-   
-    async function init() {
-      await loadVendorImages();
-      await loadVendors();
-      updateDateTime();
-    }
-    
     const slogans = [
       "Passport to Victory : Who's Flying to Turkey?",
       "من سيسافر إلى تركيا؟"
@@ -891,26 +917,23 @@
       const sloganElement = document.querySelector('.slogan');
       sloganElement.textContent = slogans[currentSloganIndex];
       currentSloganIndex = (currentSloganIndex + 1) % slogans.length;
-      setTimeout(rotateSlogan, 5000); // 5 seconds
+      setTimeout(rotateSlogan, 5000);
     }
     
-  
-    rotateSlogan();
-
     // Initial load
     async function init() {
       await loadVendorImages();
       await loadVendors();
       updateDateTime();
+      rotateSlogan();
     }
     init();
     
     // Update date each 60s
     setInterval(updateDateTime, 60000);
   
-    // each 60s
+    // Update data each 60s
     setInterval(loadVendors, 60000);
-
   </script>
 </body>
 </html>
