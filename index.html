@@ -1027,7 +1027,7 @@
               caTarget: parseFloat(cols[4]),
               clientsVal: parseFloat(cols[5]),
               clientsTarget: parseFloat(cols[6]),
-              moyenneSku: parseFloat(cols[7]),  
+              moyenneSku: cols[7].trim(),  
               score: parseFloat(cols[8]),     
               
               rec: ((parseFloat(cols[1]) / parseFloat(cols[2])) * 100).toFixed(1),
@@ -1063,7 +1063,7 @@
               clientsTarget: parseFloat(cols[4]),
               rapportStock: parseFloat(cols[5]),
               objectifStock: parseFloat(cols[6]),
-              moyenneSku: parseFloat(cols[7]),
+              moyenneSku: cols[7].trim(),
               score: parseFloat(cols[8]),
               
               ca: ((parseFloat(cols[1]) / parseFloat(cols[2])) * 100).toFixed(1),
