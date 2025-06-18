@@ -52,704 +52,749 @@
     }
 
     body {
-      font-family: 'Segoe UI', sans-serif;
-      background-image: url('https://ik.imagekit.io/agrwi9hyb/full_background.png?updatedAt=1747564093123');
-      background-size: cover;
-      background-position: center;
-      background-attachment: fixed;
-      margin: 0;
-      padding: 0;
-      color: #333;
-      overflow-x: hidden;
-    }
+            font-family: 'Segoe UI', sans-serif;
+            background-image: url('https://ik.imagekit.io/agrwi9hyb/full_background.png?updatedAt=1747564093123');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            overflow-x: hidden;
+        }
 
-    .overlay {
-      background-color: rgba(255, 255, 255, 0.65);
-      min-height: 100vh;
-      padding: 20px;
-      display: flex;
-      flex-direction: column;
-      box-shadow: inset 0 0 100px rgba(0, 0, 0, 0.1);
-    }
+        .overlay {
+            background-color: rgba(255, 255, 255, 0.65);
+            min-height: 100vh;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            box-shadow: inset 0 0 100px rgba(0, 0, 0, 0.1);
+        }
 
-    .header-container {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      margin: 10px 0 20px;
-      background-color: rgba(255, 255, 255, 0.85);
-      padding: 15px;
-      border-radius: 15px;
-      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-      flex-wrap: wrap;
-    }
+        /* Header Section */
+        .header-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: 10px 0 20px;
+            background-color: rgba(255, 255, 255, 0.85);
+            padding: 15px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            flex-wrap: wrap;
+        }
 
-    .header-content {
-      display: flex;
-      align-items: center;
-      justify-content: space-between; 
-      width: 100%; 
-      flex: 1;
-    }
+        .header-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            flex: 1;
+        }
 
-    .logo {
-      height: 120px;
-      width: auto;
-      object-fit: contain;
-    }
+        .logo {
+            height: 120px;
+            width: auto;
+            object-fit: contain;
+        }
 
-    .logo-left {
-      margin-right: 20px;
-    }
+        .logo-left {
+            margin-right: 20px;
+        }
 
-    .logo-right {
-      margin-left: 20px;
-    }
+        .logo-right {
+            margin-left: 20px;
+        }
 
-    .title-group {
-      display: flex;
-      flex-direction: column;
-      margin-right: auto;
-      margin-left: 100px;
-    }
+        .title-group {
+            display: flex;
+            flex-direction: column;
+            margin-right: auto;
+            margin-left: 100px;
+        }
 
-    h1 {
-       font-size: 2.8em;
-       margin: 0 0 5px;
-       background: linear-gradient(135deg, #3498db, #2980b9);
-       -webkit-background-clip: text;
-       -webkit-text-fill-color: transparent;
-        background-clip: text;
-        padding: 5px 0;
-        position: relative;
-        display: inline-block;
-        text-shadow: none;
-        white-space: nowrap;
-    }
+        h1 {
+            font-size: 2.8em;
+            margin: 0 0 5px;
+            background: linear-gradient(135deg, #3498db, #2980b9);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            padding: 5px 0;
+            position: relative;
+            display: inline-block;
+            text-shadow: none;
+            white-space: nowrap;
+        }
 
-    .canal-badge {
-      display: inline-block;
-      background: linear-gradient(135deg, #3498db, #2980b9);
-      color: white;
-      padding: 5px 15px;
-      border-radius: 20px;
-      font-weight: bold;
-      font-size: 1.2em;
-      margin-bottom: 5px;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-      width: fit-content;
-    }
+        .canal-badge {
+            display: inline-block;
+            background: linear-gradient(135deg, #3498db, #2980b9);
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-weight: bold;
+            font-size: 1.2em;
+            margin-bottom: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            width: fit-content;
+        }
 
-    .canal-badge.wholesale {
-      background: linear-gradient(135deg, #e74c3c, #c0392b);
-    }
+        .canal-badge.wholesale {
+            background: linear-gradient(135deg, #e74c3c, #c0392b);
+        }
 
-    .dashboard {
-      display: flex;
-      flex: 1;
-      gap: 20px;
-      flex-direction: row;
-    }
+        .slogan {
+            background: #E30A17;
+            color: white;
+            padding: 15px 50px;
+            min-width: 350px;
+            text-align: center;
+            border-radius: 40px;
+            font-weight: 700;
+            font-size: 1.8em;
+            display: inline-block;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+            border: 3px solid rgba(255, 255, 255, 0.5);
+            margin: 0 20px;
+            white-space: nowrap;
+            position: relative;
+            overflow: hidden;
+            letter-spacing: 1px;
+        }
 
-    .top-vendors {
-      flex: 2;
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
-    }
+        .slogan::after {
+            content: "";
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: linear-gradient(
+                to bottom right,
+                rgba(255,255,255,0) 0%,
+                rgba(255,255,255,0) 45%,
+                rgba(255,255,255,0.5) 50%,
+                rgba(255,255,255,0) 55%,
+                rgba(255,255,255,0) 100%
+            );
+            transform: rotate(30deg);
+            animation: shine 3s infinite;
+        }
 
-    .top-three-container {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      gap: 20px;
-      height: 100%;
-    }
+        @keyframes shine {
+            0% { left: -100%; }
+            20% { left: 100%; }
+            100% { left: 100%; }
+        }
 
-    .wholesale .top-three-container {
-      justify-content: center;
-    }
+        /* Dashboard Layout */
+        .dashboard {
+            display: flex;
+            flex: 1;
+            gap: 20px;
+            flex-direction: row;
+        }
 
-    .champion-card {
-      flex: 1;
-      display: flex;
-      flex-direction: column;
-      background: linear-gradient(135deg, rgba(255, 255, 255, 0.95), rgba(250, 250, 250, 0.95));
-      border-radius: 15px;
-      overflow: hidden;
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-      position: relative;
-      transition: all 0.3s ease;
-      padding-bottom: 20px;
-      min-height: 500px;
-      border-bottom: 3px solid #e0e0e0;
-      height: 550px;
-    }
-    
-    .wholesale .champion-card {
-      flex: 0 1 30%;
-      max-width: 400px;
-    }
-    
-    .champion-card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
-    }
-    
-    .first-place {
-      background: linear-gradient(135deg, rgba(255, 250, 230, 0.95), rgba(255, 245, 200, 0.95));
-      border: 2px solid gold;
-    }
-    
-    .second-place {
-      background: linear-gradient(135deg, rgba(245, 245, 245, 0.95), rgba(235, 235, 235, 0.95));
-      border: 2px solid silver;
-    }
-    
-    .third-place {
-      background: linear-gradient(135deg, rgba(255, 240, 230, 0.95), rgba(245, 225, 215, 0.95));
-      border: 2px solid #cd7f32;
-    }
+        .top-vendors {
+            flex: 2;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
 
-    .champion-image-container {
-      width: 100%;
-      height: 250px;
-      position: relative;
-      overflow: hidden;
-      display: flex;
-      align-items: flex-end;
-      justify-content: center;
-      margin-bottom: 15px;
-    }
-    
-    .first-place .champion-image-container,
-    .second-place .champion-image-container,
-    .third-place .champion-image-container {
-      height: 250px;
-    }
+        .top-three-container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            gap: 20px;
+            height: 100%;
+        }
 
-    .champion-image {
-      height: 90%;
-      max-width: 100%;
-      object-fit: contain;
-      object-position: bottom;
-      filter: drop-shadow(0 5px 10px rgba(0,0,0,0.2));
-    }
-    
-    .first-place .champion-image,
-    .second-place .champion-image,
-    .third-place .champion-image {
-      height: 90%;
-    }
+        .wholesale .top-three-container {
+            justify-content: center;
+        }
 
-    .champion-details {
-      flex: 1;
-      padding: 0 20px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-    }
+        /* Champion Card Styles (Top 3) */
+        .champion-card {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.95), rgba(250, 250, 250, 0.95));
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+            position: relative;
+            transition: all 0.3s ease;
+            padding-bottom: 20px;
+            min-height: 500px;
+            border-bottom: 3px solid #e0e0e0;
+            height: 550px;
+        }
 
-    .champion-rank {
-      position: absolute;
-      top: 15px;
-      left: 15px;
-      width: 40px;
-      height: 40px;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-weight: bold;
-      font-size: 1.5em;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-      z-index: 5;
-    }
-    
-    .first-place .champion-rank,
-    .second-place .champion-rank,
-    .third-place .champion-rank {
-      width: 40px;
-      height: 40px;
-      font-size: 1.5em;
-    }
-    
-    .first-place .champion-rank {
-      background: linear-gradient(135deg, #ffd700, #ffaa00);
-      color: #333;
-    }
-    
-    .second-place .champion-rank {
-      background: linear-gradient(135deg, #e0e0e0, #c0c0c0);
-      color: #333;
-    }
-    
-    .third-place .champion-rank {
-      background: linear-gradient(135deg, #cd7f32, #a56423);
-      color: #fff;
-    }
+        .wholesale .champion-card {
+            flex: 0 1 30%;
+            max-width: 400px;
+        }
 
-    .champion-name {
-      font-size: 1.6em;
-      font-weight: bold;
-      margin-bottom: 10px;
-      color: #2c3e50;
-      text-align: center;
-    }
-    
-    .first-place .champion-name,
-    .second-place .champion-name,
-    .third-place .champion-name {
-      font-size: 1.6em;
-    }
+        .champion-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+        }
 
-    .champion-score {
-      font-size: 1.5em;
-      background: rgba(52, 152, 219, 0.2);
-      padding: 8px 20px;
-      border-radius: 30px;
-      margin: 5px 0 20px;
-      color: #2980b9;
-      font-weight: bold;
-      display: inline-block;
-    }
-    
-    .first-place .champion-score,
-    .second-place .champion-score,
-    .third-place .champion-score {
-      font-size: 1.5em;
-    }
-    
-    .first-place .champion-score {
-      background: rgba(241, 196, 15, 0.3);
-      color: #d35400;
-    }
+        .first-place {
+            background: linear-gradient(135deg, rgba(255, 250, 230, 0.95), rgba(255, 245, 200, 0.95));
+            border: 2px solid gold;
+        }
 
-    .champion-metrics {
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      gap: 15px;
-      padding: 0 15px;
-    }
+        .second-place {
+            background: linear-gradient(135deg, rgba(245, 245, 245, 0.95), rgba(235, 235, 235, 0.95));
+            border: 2px solid silver;
+        }
 
-    .champion-metric {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 10px 15px;
-      background: rgba(0,0,0,0.03);
-      border-radius: 10px;
-    }
+        .third-place {
+            background: linear-gradient(135deg, rgba(255, 240, 230, 0.95), rgba(245, 225, 215, 0.95));
+            border: 2px solid #cd7f32;
+        }
 
-    .champion-metric-value {
-      font-weight: bold;
-      color: #2c3e50;
-      font-size: 1.2em;
-      min-width: 60px;
-      text-align: right;
-    }
+        .champion-image-container {
+            width: 100%;
+            height: 250px;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            margin-bottom: 15px;
+        }
 
-    .champion-metric-label {
-      font-size: 0.9em;
-      color: #7f8c8d;
-      text-align: left;
-      flex: 1;
-    }
+        .champion-image {
+            height: 90%;
+            max-width: 100%;
+            object-fit: contain;
+            object-position: bottom;
+            filter: drop-shadow(0 5px 10px rgba(0,0,0,0.2));
+        }
 
-    .other-vendors {
-      flex: 1;
-      background: rgba(255, 255, 255, 0.7);
-      border-radius: 10px;
-      padding: 15px;
-      overflow-y: auto;
-      max-height: 170px;
-      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    }
+        .champion-details {
+            flex: 1;
+            padding: 0 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
 
-    .other-vendors h2 {
-      text-align: center;
-      margin-top: 0;
-      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-      padding-bottom: 10px;
-      color: #2c3e50;
-    }
+        .champion-rank {
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 1.5em;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            z-index: 5;
+        }
 
-    .other-vendor-item {
-      display: flex;
-      align-items: center;
-      padding: 12px;
-      border-bottom: 1px solid rgba(0, 0, 0, 0.05);
-      transition: background-color 0.2s ease;
-      animation: fadeIn 0.5s ease-out backwards;
-    }
+        .first-place .champion-rank {
+            background: linear-gradient(135deg, #ffd700, #ffaa00);
+            color: #333;
+        }
 
-    .other-vendor-item:hover {
-      background-color: rgba(0, 0, 0, 0.03);
-    }
+        .second-place .champion-rank {
+            background: linear-gradient(135deg, #e0e0e0, #c0c0c0);
+            color: #333;
+        }
 
-    .other-rank {
-      width: 25px;
-      height: 25px;
-      border-radius: 50%;
-      background: rgba(0, 0, 0, 0.05);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin-right: 10px;
-      font-size: 0.9em;
-      color: #2c3e50;
-      font-weight: bold;
-    }
+        .third-place .champion-rank {
+            background: linear-gradient(135deg, #cd7f32, #a56423);
+            color: #fff;
+        }
 
-    .other-name {
-      flex: 1;
-      color: #2c3e50;
-      font-weight: 500;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      white-space: nowrap;
-    }
+        .champion-name {
+            font-size: 1.6em;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #2c3e50;
+            text-align: center;
+        }
 
-    .other-metrics {
-      display: flex;
-      gap: 10px;
-    }
+        .champion-score {
+            font-size: 1.5em;
+            background: rgba(52, 152, 219, 0.2);
+            padding: 8px 20px;
+            border-radius: 30px;
+            margin: 5px 0 20px;
+            color: #2980b9;
+            font-weight: bold;
+            display: inline-block;
+        }
 
-    .other-metric {
-      text-align: center;
-      min-width: 50px;
-    }
+        .first-place .champion-score {
+            background: rgba(241, 196, 15, 0.3);
+            color: #d35400;
+        }
 
-    .other-metric-value {
-      font-weight: bold;
-      color: #2c3e50;
-      font-size: 0.9em;
-    }
+        .champion-metrics {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            padding: 0 15px;
+        }
 
-    .other-metric-label {
-      font-size: 0.7em;
-      opacity: 0.8;
-      color: #7f8c8d;
-    }
+        .champion-metric {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 15px;
+            background: rgba(0,0,0,0.03);
+            border-radius: 10px;
+        }
 
-    .other-score {
-      background: rgba(52, 152, 219, 0.1);
-      padding: 3px 8px;
-      border-radius: 10px;
-      font-size: 0.9em;
-      color: #2980b9;
-      font-weight: bold;
-      margin-left: 10px;
-      white-space: nowrap;
-    }
+        .champion-metric-value {
+            font-weight: bold;
+            color: #2c3e50;
+            font-size: 1.2em;
+            min-width: 60px;
+            text-align: right;
+        }
 
-    .date-display {
-      position: absolute;
-      bottom: 10px;
-      right: 20px;
-      font-size: 0.9em;
-      opacity: 0.7;
-      color: #7f8c8d;
-    }
+        .champion-metric-label {
+            font-size: 0.9em;
+            color: #7f8c8d;
+            text-align: left;
+            flex: 1;
+        }
 
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(20px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
+        /* Other Vendors Section - Enhanced Styles */
+        .other-vendors-container {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
 
-    @keyframes shimmer {
-      0% { box-shadow: 0 0 0 0 rgba(255, 215, 0, 0.7); }
-      70% { box-shadow: 0 0 0 10px rgba(255, 215, 0, 0); }
-      100% { box-shadow: 0 0 0 0 rgba(255, 215, 0, 0); }
-    }
+        .other-vendors {
+            background: rgba(255, 255, 255, 0.9); /* Slightly more opaque */
+            border-radius: 15px; /* More rounded */
+            padding: 25px; /* Increased padding */
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15); /* Stronger shadow */
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); /* Adjusted min-width for better fit */
+            gap: 25px; /* Increased gap */
+            max-height: none;
+            overflow: visible;
+        }
 
-    @keyframes pulse {
-      0% { transform: scale(1); }
-      50% { transform: scale(1.03); }
-      100% { transform: scale(1); }
-    }
+        .other-vendors h2 {
+            text-align: center;
+            margin: 0 0 25px 0; /* Adjusted margin */
+            border-bottom: 2px solid rgba(0, 0, 0, 0.1); /* Thicker border */
+            padding-bottom: 15px; /* Increased padding */
+            color: #2c3e50;
+            font-size: 1.8em; /* Larger title */
+            font-weight: 700;
+            grid-column: 1 / -1;
+        }
 
-    .first-place {
-      animation: pulse 3s infinite, shimmer 2s infinite;
-    }
+        .other-vendor-card {
+            background: rgba(255, 255, 255, 0.95); /* Nearly opaque white */
+            border-radius: 12px; /* Nicely rounded corners */
+            padding: 20px; /* Generous padding */
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08); /* Soft, noticeable shadow */
+            transition: all 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            animation: fadeIn 0.5s ease-out backwards;
+            border: 1px solid rgba(0, 0, 0, 0.05); /* Subtle border */
+        }
 
-    .champion-card {
-      animation: fadeIn 0.5s ease-out backwards;
-    }
+        .other-vendor-card:hover {
+            transform: translateY(-5px); /* More pronounced lift */
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
+        }
 
-    .first-place {
-      animation-delay: 0.1s;
-    }
+        .other-vendor-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px; /* Increased margin */
+            padding-bottom: 15px; /* Increased padding */
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1); /* Clear separator */
+        }
 
-    .second-place {
-      animation-delay: 0.3s;
-    }
+        .other-rank {
+            width: 38px; /* Slightly larger */
+            height: 38px; /* Slightly larger */
+            border-radius: 50%;
+            background: #3498db; /* A vibrant blue background */
+            color: white; /* White text for contrast */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.1em; /* Slightly larger font */
+            font-weight: bold;
+            margin-right: 15px; /* More space */
+            box-shadow: 0 2px 8px rgba(52, 152, 219, 0.3); /* Subtle shadow for depth */
+        }
 
-    .third-place {
-      animation-delay: 0.5s;
-    }
+        .other-name {
+            flex: 1;
+            font-weight: 700; /* Bolder name */
+            color: #2c3e50;
+            font-size: 1.25em; /* Larger name font */
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
 
-    .ribbon {
-      position: absolute;
-      right: -5px; 
-      top: -5px;
-      z-index: 1;
-      overflow: hidden;
-      width: 100px; 
-      height: 100px;
-      text-align: right;
-    }
-    
-    .first-place .ribbon span {
-      font-size: 12px;
-      font-weight: bold;
-      color: #FFF;
-      text-transform: uppercase;
-      text-align: center;
-      line-height: 25px;
-      transform: rotate(45deg);
-      width: 120px;
-      display: block;
-      background: linear-gradient(#F70505 0%, #8F0808 100%);
-      box-shadow: 0 3px 10px -5px rgba(0, 0, 0, 1);
-      position: absolute;
-      top: 22px; 
-      right: -27px;
-    }
-    
-    .first-place .ribbon span::before {
-      content: "";
-      position: absolute; 
-      left: 0px; top: 100%;
-      z-index: -1;
-      border-left: 3px solid #8F0808;
-      border-right: 3px solid transparent;
-      border-bottom: 3px solid transparent;
-      border-top: 3px solid #8F0808;
-    }
-    
-    .first-place .ribbon span::after {
-      content: "";
-      position: absolute; 
-      right: 0px; top: 100%;
-      z-index: -1;
-      border-left: 3px solid transparent;
-      border-right: 3px solid #8F0808;
-      border-bottom: 3px solid transparent;
-      border-top: 3px solid #8F0808;
-    }
+        .other-score {
+            background: #28a745; /* A success green */
+            padding: 5px 12px; /* Adjusted padding */
+            border-radius: 20px; /* More rounded pill shape */
+            font-size: 1em; /* Standard font size */
+            color: white; /* White text for score */
+            font-weight: bold;
+            box-shadow: 0 2px 5px rgba(40, 167, 69, 0.2); /* Soft shadow for score */
+        }
 
-    
-    .wholesale-view {
-      display: none;
-    }
+        .other-metrics {
+            display: grid;
+            grid-template-columns: 1fr 1fr; /* Two columns for metrics */
+            gap: 12px 15px; /* Slightly larger gaps between metrics */
+        }
 
-    .wholesale-bg {
-      background-image: url('https://ik.imagekit.io/agrwi9hyb/finalgros.png?updatedAt=1748818070037');
-    }
+        .other-metric {
+            display: flex;
+            flex-direction: column;
+            background-color: rgba(0, 0, 0, 0.03); /* Light background for each metric */
+            padding: 8px 10px; /* Padding for metric boxes */
+            border-radius: 8px; /* Rounded corners for metric boxes */
+        }
 
-    @media (max-width: 1200px) {
-      .dashboard {
-        flex-direction: column;
-      }
-      
-      .other-vendors {
-        max-height: none;
-        margin-top: 20px;
-      }
-    }
+        .other-metric-label {
+            font-size: 0.8em; /* Smaller label font */
+            color: #7f8c8d;
+            margin-bottom: 4px; /* More space between label and value */
+            font-weight: 500; /* Medium weight */
+        }
 
-    @media (max-width: 992px) {
-      .header-container {
-        flex-direction: column;
-        text-align: center;
-      }
-      
-      .logo-left, .logo-right {
-        margin: 10px 0;
-        height: 80px;
-      }
-      
-      .header-content {
-        flex-direction: column;
-      }
-      
-      .title-group {
-        margin: 15px 0;
-        align-items: center;
-      }
-      
-      h1 {
-        font-size: 2.2em;
-        white-space: normal;
-      }
-      
-      .slogan {
-        font-size: 1.4em;
-        padding: 10px 30px;
-        min-width: auto;
-        margin: 15px 0;
-        white-space: normal;
-      }
+        .other-metric-value {
+            font-weight: bold;
+            color: #2c3e50;
+            font-size: 1.05em; /* Slightly larger value font */
+        }
 
-      .wholesale .champion-card {
-        flex: 0 1 45%;
-      }
-    }
-
-    .update-container {
-        position: absolute;
-        top: 500px;              /* Moved further down */
-        right: 180px;             /* Moved closer to right edge */
-        width: 220px;            /* Slightly wider */
-        background: linear-gradient(135deg, rgba(255, 255, 255, 0.95), rgba(248, 249, 250, 0.95));
-        border-radius: 15px;
-        padding: 20px;
-        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
-        text-align: center;
-        z-index: 100;
-        border: 2px solid rgba(52, 152, 219, 0.3);
-        backdrop-filter: blur(10px);
-        transition: all 0.3s ease;
+        /* Update Container */
+        .update-container {
+            position: absolute;
+            top: 750px; /* Positioned relative to the top of the dashboard */
+            right: 180px;
+            width: 220px;
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.98), rgba(248, 249, 250, 0.98));
+            border-radius: 15px;
+            padding: 20px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            z-index: 100;
+            border: 2px solid rgba(52, 152, 219, 0.3);
+            backdrop-filter: blur(10px);
+            transition: all 0.3s ease;
         }
 
         .update-container:hover {
-        transform: translateY(-3px);
-        box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+            transform: translateY(-3px);
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
         }
 
         .update-container h3 {
-        margin: 0 0 15px 0;
-        color: #2c3e50;
-        font-size: 1.2em;
-        font-weight: 600;
-        text-transform: uppercase;
-        letter-spacing: 1px;
+            margin: 0 0 15px 0;
+            color: #2c3e50;
+            font-size: 1.2em;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
         }
 
         .update-date {
-        font-size: 1em;
-        color: #fff;
-        font-weight: bold;
-        background: linear-gradient(135deg, #3498db, #2980b9);
-        padding: 10px 15px;
-        border-radius: 20px;
-        display: inline-block;
-        box-shadow: 0 4px 10px rgba(52, 152, 219, 0.3);
-        transition: all 0.3s ease;
+            font-size: 1em;
+            color: #fff;
+            font-weight: bold;
+            background: linear-gradient(135deg, #3498db, #2980b9);
+            padding: 10px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            box-shadow: 0 4px 10px rgba(52, 152, 219, 0.3);
+            transition: all 0.3s ease;
         }
 
         .update-date:hover {
-        transform: scale(1.05);
-        box-shadow: 0 6px 15px rgba(52, 152, 219, 0.4);
+            transform: scale(1.05);
+            box-shadow: 0 6px 15px rgba(52, 152, 219, 0.4);
         }
 
-    @media (max-width: 768px) {
-      .top-three-container {
-        flex-direction: column;
-        height: auto;
-      }
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
 
-      .update-container {
-        position: static !important;
-        width: 100%;
-        margin-top: 20px;
-        right: auto;
-        top: auto;
-      }
-      
-      .champion-card {
-        min-height: auto;
-        height: auto;
-        margin-bottom: 20px;
-      }
-      
-      .champion-image-container {
-        height: 200px;
-      }
-      
-      .champion-name {
-        font-size: 1.4em;
-      }
-      
-      .champion-score {
-        font-size: 1.3em;
-      }
-      
-      .other-vendor-item {
-        flex-wrap: wrap;
-        gap: 5px;
-      }
-      
-      .other-name {
-        min-width: 100%;
-        order: 1;
-        margin-bottom: 5px;
-      }
-      
-      .other-score {
-        order: 2;
-        margin-left: 0;
-      }
-      
-      .other-metrics {
-        order: 3;
-        width: 100%;
-        justify-content: space-between;
-      }
-      
-      .other-metric {
-        min-width: auto;
-        flex: 1;
-      }
+        @keyframes shimmer {
+            0% { box-shadow: 0 0 0 0 rgba(255, 215, 0, 0.7); }
+            70% { box-shadow: 0 0 0 10px rgba(255, 215, 0, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(255, 215, 0, 0); }
+        }
 
-      .wholesale .champion-card {
-        flex: 0 1 100%;
-        max-width: 100%;
-      }
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.03); }
+            100% { transform: scale(1); }
+        }
 
-      
-    }
+        .first-place {
+            animation: pulse 3s infinite, shimmer 2s infinite;
+        }
 
-    @media (max-width: 576px) {
-      .overlay {
-        padding: 10px;
-      }
-      
-      .header-container {
-        padding: 10px;
-      }
-      .update-container {
-        margin: 15px 0;
-        padding: 15px;
-      }
-      
-      h1 {
-        font-size: 1.8em;
-      }
-      
-      .canal-badge {
-        font-size: 1em;
-      }
-      
-      .slogan {
-        font-size: 1.2em;
-        padding: 8px 20px;
-      }
-      
-      .champion-metric-label,
-      .champion-metric-value {
-        font-size: 1em;
-      }
-      
-      .date-display {
-        position: static;
-        text-align: center;
-        margin-top: 15px;
-      }
-    }
+        .champion-card {
+            animation: fadeIn 0.5s ease-out backwards;
+        }
+
+        .first-place {
+            animation-delay: 0.1s;
+        }
+
+        .second-place {
+            animation-delay: 0.3s;
+        }
+
+        .third-place {
+            animation-delay: 0.5s;
+        }
+
+        /* Ribbon for Champion */
+        .ribbon {
+            position: absolute;
+            right: -5px;
+            top: -5px;
+            z-index: 1;
+            overflow: hidden;
+            width: 100px;
+            height: 100px;
+            text-align: right;
+        }
+
+        .first-place .ribbon span {
+            font-size: 12px;
+            font-weight: bold;
+            color: #FFF;
+            text-transform: uppercase;
+            text-align: center;
+            line-height: 25px;
+            transform: rotate(45deg);
+            width: 120px;
+            display: block;
+            background: linear-gradient(#F70505 0%, #8F0808 100%);
+            box-shadow: 0 3px 10px -5px rgba(0, 0, 0, 1);
+            position: absolute;
+            top: 22px;
+            right: -27px;
+        }
+
+        .first-place .ribbon span::before {
+            content: "";
+            position: absolute;
+            left: 0px; top: 100%;
+            z-index: -1;
+            border-left: 3px solid #8F0808;
+            border-right: 3px solid transparent;
+            border-bottom: 3px solid transparent;
+            border-top: 3px solid #8F0808;
+        }
+
+        .first-place .ribbon span::after {
+            content: "";
+            position: absolute;
+            right: 0px; top: 100%;
+            z-index: -1;
+            border-left: 3px solid transparent;
+            border-right: 3px solid #8F0808;
+            border-bottom: 3px solid transparent;
+            border-top: 3px solid #8F0808;
+        }
+
+        /* Wholesale Specific Styles */
+        .wholesale-view {
+            display: none;
+        }
+
+        .wholesale-bg {
+            background-image: url('https://ik.imagekit.io/agrwi9hyb/finalgros.png?updatedAt=1748818070037');
+        }
+
+        /* Responsive Design */
+        @media (max-width: 1200px) {
+            .dashboard {
+                flex-direction: column;
+            }
+
+            .other-vendors {
+                grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            }
+
+            .update-container {
+                position: static !important;
+                width: 100%;
+                margin-top: 20px;
+                right: auto;
+                top: auto;
+            }
+        }
+
+        @media (max-width: 992px) {
+            .header-container {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .logo-left, .logo-right {
+                margin: 10px 0;
+                height: 80px;
+            }
+
+            .header-content {
+                flex-direction: column;
+            }
+
+            .title-group {
+                margin: 15px 0;
+                align-items: center;
+            }
+
+            h1 {
+                font-size: 2.2em;
+                white-space: normal;
+            }
+
+            .slogan {
+                font-size: 1.4em;
+                padding: 10px 30px;
+                min-width: auto;
+                margin: 15px 0;
+                white-space: normal;
+            }
+
+            .wholesale .champion-card {
+                flex: 0 1 45%;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .top-three-container {
+                flex-direction: column;
+                height: auto;
+            }
+
+            .champion-card {
+                min-height: auto;
+                height: auto;
+                margin-bottom: 20px;
+            }
+
+            .champion-image-container {
+                height: 200px;
+            }
+
+            .champion-name {
+                font-size: 1.4em;
+            }
+
+            .champion-score {
+                font-size: 1.3em;
+            }
+
+            .other-vendors {
+                grid-template-columns: 1fr;
+                padding: 15px;
+            }
+
+            .other-vendors h2 {
+                font-size: 1.5em;
+            }
+
+            .other-vendor-card {
+                padding: 15px;
+            }
+
+            .other-rank {
+                width: 35px;
+                height: 35px;
+                font-size: 1em;
+            }
+
+            .other-name {
+                font-size: 1.1em;
+            }
+
+            .other-score {
+                font-size: 0.9em;
+            }
+
+            .other-metrics {
+                grid-template-columns: 1fr; /* Single column on smaller screens */
+                gap: 10px;
+            }
+
+            .wholesale .champion-card {
+                flex: 0 1 100%;
+                max-width: 100%;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .overlay {
+                padding: 10px;
+            }
+
+            .header-container {
+                padding: 10px;
+            }
+
+            .update-container {
+                margin: 15px 0;
+                padding: 15px;
+            }
+
+            h1 {
+                font-size: 1.8em;
+            }
+
+            .canal-badge {
+                font-size: 1em;
+            }
+
+            .slogan {
+                font-size: 1.2em;
+                padding: 8px 20px;
+            }
+
+            .champion-metric-label,
+            .champion-metric-value {
+                font-size: 1em;
+            }
+
+            .date-display {
+                position: static;
+                text-align: center;
+                margin-top: 15px;
+            }
+        }
   </style>
 </head>
 <body>
@@ -774,7 +819,7 @@
       <div class="top-vendors">
         <div id="ka-topThree" class="top-three-container"></div>
       </div>
-      <div style="flex: 1; display: flex; flex-direction: column; gap: 20px;">
+      <div class="other-vendors-container">
         <div class="other-vendors">
           <h2>Other Sellers</h2>
           <div id="ka-otherVendors"></div>
@@ -813,8 +858,8 @@
   </div>
 
   <script>
-    const kaDataSheetURL = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vRfJnWZ7JuAcofzGfTfXL3XBmMBIpHNWftUDGReUSVDa_bfEVuZx0fieUqz_5Rfnh_QttTmRpWsTd9h/pub?gid=325122496&single=true&output=csv';
-    const wholesaleDataSheetURL = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vRfJnWZ7JuAcofzGfTfXL3XBmMBIpHNWftUDGReUSVDa_bfEVuZx0fieUqz_5Rfnh_QttTmRpWsTd9h/pub?gid=1540242746&single=true&output=csv';
+    const kaDataSheetURL = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vRfJnWZ7JuAcofzGfTfXL3XBmMBIpHNWftUDGReUSVDa_bfEVuZx0fieUqz_5Rfnh_QttTmRpWsTd9h/pub?gid=1626105869&single=true&output=csv';
+    const wholesaleDataSheetURL = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vRfJnWZ7JuAcofzGfTfXL3XBmMBIpHNWftUDGReUSVDa_bfEVuZx0fieUqz_5Rfnh_QttTmRpWsTd9h/pub?gid=691405651&single=true&output=csv';
     const imagesSheetURL = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vRfJnWZ7JuAcofzGfTfXL3XBmMBIpHNWftUDGReUSVDa_bfEVuZx0fieUqz_5Rfnh_QttTmRpWsTd9h/pub?gid=1307762501&single=true&output=csv';
 
     const defaultImage = '/api/placeholder/200/300';
@@ -867,40 +912,75 @@
           `;
         }
         
-        const isWholesale = channel === 'wholesale';
-        const isYouba = vendor.name === "Youba Kherroub";
-        const recouvrementLabel = isYouba ? "SKU Energizer" : isWholesale ? "Stock Hebdo" : "Recouvrement";
-        const recouvrementValue = isWholesale ? `${vendor.rapportStock}/${vendor.objectifStock}` : `${vendor.rec}%`;
-        
-        card.innerHTML = `
-        ${ribbonHtml}
-        <div class="champion-rank">${i+1}</div>
-        <div class="champion-image-container">
-            <img src="${imgUrl}" alt="${vendor.name}" class="champion-image" onerror="this.onerror=null; this.src='${defaultImage}';">
-        </div>
-        <div class="champion-details">
-            <div class="champion-name">${vendor.name}</div>
-            <div class="champion-score">${vendor.score.toFixed(1)} pts</div>
-            <div class="champion-metrics">
-            <div class="champion-metric">
-                <div class="champion-metric-label">${recouvrementLabel}</div>
-                <div class="champion-metric-value">${recouvrementValue}</div>
+        if (channel === 'wholesale') {
+          card.innerHTML = `
+            ${ribbonHtml}
+            <div class="champion-rank">${i+1}</div>
+            <div class="champion-image-container">
+              <img src="${imgUrl}" alt="${vendor.name}" class="champion-image" onerror="this.onerror=null; this.src='${defaultImage}';">
             </div>
-            <div class="champion-metric">
-                <div class="champion-metric-label">CA</div>
-                <div class="champion-metric-value">${vendor.ca}%</div>
+            <div class="champion-details">
+              <div class="champion-name">${vendor.name}</div>
+              <div class="champion-score">${vendor.score.toFixed(1)} pts</div>
+              <div class="champion-metrics">
+                <div class="champion-metric">
+                  <div class="champion-metric-label">Recouvrement</div>
+                  <div class="champion-metric-value">${vendor.recouvrement}%</div>
+                </div>
+                <div class="champion-metric">
+                  <div class="champion-metric-label">CA</div>
+                  <div class="champion-metric-value">${vendor.ca}%</div>
+                </div>
+                <div class="champion-metric">
+                  <div class="champion-metric-label">Clients (${vendor.clientsVal}/${vendor.clientsTarget})</div>
+                  <div class="champion-metric-value">${vendor.clients}%</div>
+                </div>
+                <div class="champion-metric">
+                  <div class="champion-metric-label">Marque Prioritaire</div>
+                  <div class="champion-metric-value">${vendor.marque}%</div>
+                </div>
+                <div class="champion-metric">
+                  <div class="champion-metric-label">Moyenne SKU</div>
+                  <div class="champion-metric-value">${vendor.moyenneSku}</div>
+                </div>
+              </div>
             </div>
-            <div class="champion-metric">
-                <div class="champion-metric-label">Clients (${vendor.clientsVal}/${vendor.clientsTarget})</div>
-                <div class="champion-metric-value">${vendor.clients}%</div>
+          `;
+        } else {
+          card.innerHTML = `
+            ${ribbonHtml}
+            <div class="champion-rank">${i+1}</div>
+            <div class="champion-image-container">
+              <img src="${imgUrl}" alt="${vendor.name}" class="champion-image" onerror="this.onerror=null; this.src='${defaultImage}';">
             </div>
-            <div class="champion-metric">
-                <div class="champion-metric-label">Moyenne SKU</div>
-                <div class="champion-metric-value">${vendor.moyenneSku}</div>
+            <div class="champion-details">
+              <div class="champion-name">${vendor.name}</div>
+              <div class="champion-score">${vendor.score.toFixed(1)} pts</div>
+              <div class="champion-metrics">
+                <div class="champion-metric">
+                  <div class="champion-metric-label">Recouvrement</div>
+                  <div class="champion-metric-value">${vendor.rec}%</div>
+                </div>
+                <div class="champion-metric">
+                  <div class="champion-metric-label">CA</div>
+                  <div class="champion-metric-value">${vendor.ca}%</div>
+                </div>
+                <div class="champion-metric">
+                  <div class="champion-metric-label">Clients (${vendor.clientsVal}/${vendor.clientsTarget})</div>
+                  <div class="champion-metric-value">${vendor.clients}%</div>
+                </div>
+                <div class="champion-metric">
+                  <div class="champion-metric-label">Marque Prioritaire</div>
+                  <div class="champion-metric-value">${vendor.marque}%</div>
+                </div>
+                <div class="champion-metric">
+                  <div class="champion-metric-label">Moyenne SKU</div>
+                  <div class="champion-metric-value">${vendor.moyenneSku}</div>
+                </div>
+              </div>
             </div>
-            </div>
-        </div>
-        `;
+          `;
+        }
         
         container.appendChild(card);
       }
@@ -914,43 +994,48 @@
       
       for (let i = 3; i < vendors.length; i++) {
         const v = vendors[i];
-        const item = document.createElement('div');
-        item.className = 'other-vendor-item';
-        item.style.animationDelay = `${0.1 * (i - 3)}s`;
+        const card = document.createElement('div');
+        card.className = 'other-vendor-card';
+        card.style.animationDelay = `${0.1 * (i - 3)}s`;
         
         const isWholesale = channel === 'wholesale';
         const isYouba = v.name === "Youba Kherroub";
         const recouvrementLabel = isYouba ? "SKU Energizer" : isWholesale ? "Stock" : "Recouvrement";
         const recouvrementValue = isWholesale ? `${v.rapportStock}/${v.objectifStock}` : `${v.rec}%`;
         
-        item.innerHTML = `
-        <div class="other-rank">${i + 1}</div>
-        <div class="other-name">${v.name}</div>
-        <div class="other-score">${v.score.toFixed(1)} pts</div>
-        <div class="other-metrics">
+        card.innerHTML = `
+          <div class="other-vendor-header">
+            <div class="other-rank">${i + 1}</div>
+            <div class="other-name">${v.name}</div>
+            <div class="other-score">${v.score.toFixed(1)} pts</div>
+          </div>
+          <div class="other-metrics">
             <div class="other-metric">
-            <div class="other-metric-value">${recouvrementValue}</div>
-            <div class="other-metric-label">${recouvrementLabel}</div>
+              <div class="other-metric-label">${recouvrementLabel}</div>
+              <div class="other-metric-value">${recouvrementValue}</div>
             </div>
             <div class="other-metric">
-            <div class="other-metric-value">${v.ca}%</div>
-            <div class="other-metric-label">CA</div>
+              <div class="other-metric-label">CA</div>
+              <div class="other-metric-value">${v.ca}%</div>
             </div>
             <div class="other-metric">
-            <div class="other-metric-value">${v.clients}%</div>
-            <div class="other-metric-label">Clients</div>
+              <div class="other-metric-label">Clients</div>
+              <div class="other-metric-value">${v.clients}%</div>
             </div>
             <div class="other-metric">
-            <div class="other-metric-value">${v.moyenneSku}</div>
-            <div class="other-metric-label">Moyenne SKU</div>
+              <div class="other-metric-label">Moyenne SKU</div>
+              <div class="other-metric-value">${v.moyenneSku}</div>
             </div>
-        </div>
+            <div class="other-metric">
+              <div class="other-metric-label">Marque</div>
+              <div class="other-metric-value">${v.marque}%</div>
+            </div>
+          </div>
         `;
         
-        container.appendChild(item);
+        container.appendChild(card);
       }
     }
-    
     
     async function loadVendorImages() {
       try {
@@ -1008,12 +1093,11 @@
         const data = await res.text();
         const rows = data.split("\n");
         
-        // Get the update date from J1 (assuming it's in the first row, 10th column)
         const headerRow = rows[0].split(",");
-        const updateDate = headerRow[9] ? headerRow[9].trim().replace(/^"|"$/g, '') : 'Not available';
+        const updateDate = headerRow[11] ? headerRow[11].trim().replace(/^"|"$/g, '') : 'Not available';
         document.getElementById('ka-updateDate').textContent = updateDate;
         
-        const dataRows = rows.slice(1); // Skip header row for vendor data
+        const dataRows = rows.slice(1);
 
         const vendors = dataRows
           .filter(row => row.trim().length > 0)
@@ -1028,11 +1112,14 @@
               clientsVal: parseFloat(cols[5]),
               clientsTarget: parseFloat(cols[6]),
               moyenneSku: cols[7].trim(),  
-              score: parseFloat(cols[8]),     
+              marqueVal: parseFloat(cols[8]),
+              marqueTarget: parseFloat(cols[9]), 
+              score: parseFloat(cols[10]),     
               
               rec: ((parseFloat(cols[1]) / parseFloat(cols[2])) * 100).toFixed(1),
               ca: ((parseFloat(cols[3]) / parseFloat(cols[4])) * 100).toFixed(1),
-              clients: ((parseFloat(cols[5]) / parseFloat(cols[6])) * 100).toFixed(1)
+              clients: ((parseFloat(cols[5]) / parseFloat(cols[6])) * 100).toFixed(1),
+              marque: ((parseFloat(cols[8]) / parseFloat(cols[9])) * 100).toFixed(1)
             };
           });
 
@@ -1061,13 +1148,17 @@
               caTarget: parseFloat(cols[2]),
               clientsVal: parseFloat(cols[3]),
               clientsTarget: parseFloat(cols[4]),
-              rapportStock: parseFloat(cols[5]),
-              objectifStock: parseFloat(cols[6]),
+              recouvrementVal: parseFloat(cols[5]), 
+              recouvrementTarget: parseFloat(cols[6]),
               moyenneSku: cols[7].trim(),
-              score: parseFloat(cols[8]),
+              marqueVal: parseFloat(cols[8]),
+              marqueTarget: parseFloat(cols[9]), 
+              score: parseFloat(cols[10]),
               
               ca: ((parseFloat(cols[1]) / parseFloat(cols[2])) * 100).toFixed(1),
-              clients: ((parseFloat(cols[3]) / parseFloat(cols[4])) * 100).toFixed(1)
+              clients: ((parseFloat(cols[3]) / parseFloat(cols[4])) * 100).toFixed(1),
+              recouvrement: ((parseFloat(cols[5]) / parseFloat(cols[6])) * 100).toFixed(1),
+              marque: ((parseFloat(cols[8]) / parseFloat(cols[9])) * 100).toFixed(1)
             };
           });
 
@@ -1094,7 +1185,7 @@
       }
       
       clearTimeout(viewTimer);
-      viewTimer = setTimeout(toggleView, 15000); // 15 seconds
+      viewTimer = setTimeout(toggleView, 15000);
     }
     
     const slogans = [
@@ -1118,12 +1209,10 @@
       await loadWholesaleVendors();
       rotateSlogan();
       
-      viewTimer = setTimeout(toggleView, 15000); // 15 seconds
+      viewTimer = setTimeout(toggleView, 15000);
     }
     init();
     
-    
-  
     setInterval(() => {
       loadKAVendors();
       loadWholesaleVendors();
